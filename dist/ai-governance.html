@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Governance Consulting: Human-in-the-Loop, Auditability and Controls | Zi Cloud Ltd</title>
+<meta name="description" content="AI governance design for regulated organisations: human-in-the-loop workflows, AI controls, approval models, escalation, auditability and decision traceability.">
+<link rel="canonical" href="https://www.zicloud.uk/ai-governance.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:site_name" content="Zi Cloud Ltd">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Governance Consulting: Human-in-the-Loop, Auditability and Controls | Zi Cloud Ltd">
+<meta property="og:description" content="AI governance design for regulated organisations: human-in-the-loop workflows, AI controls, approval models, escalation, auditability and decision traceability.">
+<meta property="og:url" content="https://www.zicloud.uk/ai-governance.html">
+<meta property="og:image" content="https://www.zicloud.uk/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Governance Consulting: Human-in-the-Loop, Auditability and Controls | Zi Cloud Ltd">
+<meta name="twitter:description" content="AI governance design for regulated organisations: human-in-the-loop workflows, AI controls, approval models, escalation, auditability and decision traceability.">
+<meta name="twitter:image" content="https://www.zicloud.uk/assets/og-image.png">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Zi Cloud Ltd","url":"https://www.zicloud.uk"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you help us write an AI policy?","acceptedAnswer":{"@type":"Answer","text":"We can, but our focus is on the operating model that gives the policy effect: the use-case register, approval routes, tiering, monitoring and evidence. A policy that cannot be operated is a liability, so we design the mechanisms first and align the wording to them."}},{"@type":"Question","name":"How does this relate to model risk management?","acceptedAnswer":{"@type":"Answer","text":"Where you have a model risk framework, we align tiering and validation expectations to it and extend it to cover generative and workflow-embedded AI, which often falls outside traditional model inventories."}},{"@type":"Question","name":"Is human-in-the-loop always the right answer?","acceptedAnswer":{"@type":"Answer","text":"No. Human review adds cost and can become a rubber stamp if the reviewer lacks time or information. We set oversight by risk tier, and we measure whether reviewers are genuinely catching errors."}},{"@type":"Question","name":"Can you assess AI tools that our teams already use?","acceptedAnswer":{"@type":"Answer","text":"Yes. Shadow use is common, and it is usually the first thing we surface in discovery. We help you bring existing tools into the register, classify them and decide which should be governed, restricted or retired."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"AI Governance","url":"https://www.zicloud.uk/ai-governance.html"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Zi Cloud Ltd home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0B1F3A"/>
+  <path d="M9 10h14L9 22h14" fill="none" stroke="#2EC4B6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="23" cy="10" r="1.8" fill="#2EC4B6"/></svg><span class="brand-text">Zi Cloud</span></a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li><li class="nav-item has-children">
+        <button class="nav-link nav-trigger is-active" type="button" aria-expanded="false" aria-controls="menu-1">Solutions <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="dropdown" id="menu-1">
+          <ul><li><a href="/financial-crime-operations.html"><span class="dd-title">Financial Crime Operations</span><span class="dd-desc">AML, KYC, investigations and SAR workflows</span></a></li><li><a href="/compliance-operations.html"><span class="dd-title">Compliance Operations</span><span class="dd-desc">Controls, evidence and audit readiness</span></a></li><li><a href="/ai-governance.html" aria-current="page"><span class="dd-title">AI Governance</span><span class="dd-desc">Human oversight, controls and decision traceability</span></a></li><li><a href="/airtable-regulated-organisations.html"><span class="dd-title">Airtable for Regulated Organisations</span><span class="dd-desc">Operational control platform design</span></a></li></ul>
+        </div>
+      </li><li class="nav-item"><a class="nav-link" href="/industries.html">Industries</a></li><li class="nav-item"><a class="nav-link" href="/case-studies.html">Case Studies</a></li><li class="nav-item"><a class="nav-link" href="/insights.html">Insights</a></li><li class="nav-item"><a class="nav-link" href="/about.html">About</a></li></ul>
+      <div class="nav-cta-mobile"><a class="btn btn-primary" href="/contact.html#discovery">Book Discovery Call</a></div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm header-cta" href="/contact.html#discovery">Book Discovery Call</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><span class="sr-only">Menu</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs container" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">AI Governance</li></ol></nav><section class="hero hero-dark">
+  <div class="hero-bg" aria-hidden="true"><svg class="lattice" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <path d="M0 60 H600 M0 140 H600 M0 220 H600 M0 300 H600 M0 380 H600"/>
+    <path d="M60 0 V400 M180 0 V400 M300 0 V400 M420 0 V400 M540 0 V400"/>
+  </g>
+  <g fill="currentColor"><circle cx="180" cy="140" r="3"/><circle cx="300" cy="220" r="3"/><circle cx="420" cy="140" r="3"/><circle cx="540" cy="300" r="3"/><circle cx="60" cy="300" r="3"/></g>
+  <path d="M60 300 L180 140 L300 220 L420 140 L540 300" fill="none" stroke="#2EC4B6" stroke-width="1.6"/>
+</svg></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Pillar</p>
+      <h1>AI is Easy.<br><span class="accent-text">Governance is Hard.</span></h1>
+      <p class="lead">Getting a model to produce a useful output takes an afternoon. Getting an organisation to use that output in regulated work, with clear accountability, proportionate oversight and evidence that holds up to scrutiny, takes deliberate design. Our AI governance work focuses on the operational mechanisms that make AI safe to use, not on principles alone.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="/contact.html#discovery">Book Discovery Call</a><a class="btn btn-outline" href="#ai-loop">See the decision loop</a></div>
+    </div>
+    <div class="hero-visual reveal"><ol class="loop" aria-label="Human-in-the-loop decision cycle"><li class="loop-node"><span class="loop-index">1</span><strong>Propose</strong><span>The model drafts an output within a defined task scope.</span></li><li class="loop-node"><span class="loop-index">2</span><strong>Gate</strong><span>Rules check confidence, risk tier and data restrictions.</span></li><li class="loop-node"><span class="loop-index">3</span><strong>Review</strong><span>A named person accepts, edits or rejects the output.</span></li></ol></div>
+  </div>
+</section>
+  <section class="section" id="ai-topics" aria-labelledby="ai-topics-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">What we design</p>
+      <h2 id="ai-topics-title">The operating mechanisms behind controlled AI</h2>
+      
+    </header>
+    <div class="grid grid-3"><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+    <h3>Human-in-the-loop workflows</h3>
+    <p>Defined points where a person reviews, edits or approves an AI output before it has effect, with the reviewer recorded and the review standard written down.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+    <h3>AI controls</h3>
+    <p>Input restrictions, output checks, confidence thresholds, prohibited-use rules and data handling controls, implemented in the workflow rather than in policy alone.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+    <h3>Auditability</h3>
+    <p>Logs that capture the input, model and configuration version, output, reviewer action and timestamp for every consequential AI-assisted step.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+    <h3>Explainability</h3>
+    <p>Documentation and interfaces that let a reviewer understand why an output was produced and what it relied on, proportionate to the risk tier.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg></span>
+    <h3>Approval models</h3>
+    <p>Tiered approval routes for new use cases and material changes, with clear criteria for who signs off and what evidence they receive.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></span>
+    <h3>Escalation workflows</h3>
+    <p>Routes for model errors, unexpected outputs, customer complaints and control breaches, with ownership, timescales and root-cause capture.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="16" y="15" width="6" height="6" rx="1"/><path d="M8 6h4a2 2 0 0 1 2 2v8a2 2 0 0 0 2 2h0"/></svg></span>
+    <h3>Controlled AI adoption</h3>
+    <p>A staged path from pilot to production, with exit criteria at each stage and a register that shows every AI use case and its status.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+    <h3>Evidence generation</h3>
+    <p>Evidence packs produced as part of normal operation: testing results, approval records, monitoring summaries and incident logs.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
+    <h3>Decision traceability</h3>
+    <p>The ability to trace a specific decision back through the AI output, the human review and the source data it relied on.</p>
+    </div></div>
+  </div>
+</section>
+  <section class="section section-mist" id="ai-loop" aria-labelledby="ai-loop-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Human-in-the-loop</p>
+      <h2 id="ai-loop-title">A decision loop with a named accountable person</h2>
+      <p class="section-lead">The model proposes. Rules gate the output. A person accepts, edits or rejects it. Exceptions escalate, and every step is recorded.</p>
+    </header>
+    <div class="reveal"><ol class="loop" aria-label="Human-in-the-loop decision cycle"><li class="loop-node"><span class="loop-index">1</span><strong>Propose</strong><span>The model drafts an output within a defined task scope.</span></li><li class="loop-node"><span class="loop-index">2</span><strong>Gate</strong><span>Rules check confidence, risk tier and data restrictions.</span></li><li class="loop-node"><span class="loop-index">3</span><strong>Review</strong><span>A named person accepts, edits or rejects the output.</span></li><li class="loop-node"><span class="loop-index">4</span><strong>Escalate</strong><span>Exceptions and disagreements route to the accountable owner.</span></li><li class="loop-node"><span class="loop-index">5</span><strong>Record</strong><span>Input, output, decision and rationale are stored immutably.</span></li></ol></div>
+  </div>
+</section>
+  <section class="section" id="ai-tiers" aria-labelledby="ai-tiers-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Approval and oversight</p>
+      <h2 id="ai-tiers-title">Risk-tiered oversight, not one rule for everything</h2>
+      <p class="section-lead">Oversight is set by the consequence of error and how reversible the action is. The tier governs the review model, the sampling and the approval route.</p>
+    </header>
+    <div class="table-wrap reveal" role="region" aria-label="Risk tiers and oversight" tabindex="0"><table class="data-table">
+    <caption class="sr-only">Risk tiers and the oversight each requires</caption>
+    <thead><tr><th scope="col">Tier</th><th scope="col">Model of oversight</th><th scope="col">Oversight required</th><th scope="col">Example</th></tr></thead>
+    <tbody><tr><th scope="row">Tier 1<span class="tier-label">Assistive</span></th><td>Assistive</td><td>Human reviews every output before use. Logged, sampled for quality each period.</td><td>Drafting a case summary that an analyst edits and signs.</td></tr><tr><th scope="row">Tier 2<span class="tier-label">Supervised</span></th><td>Supervised</td><td>Outputs above a defined confidence threshold proceed with sampling. Below threshold, a person decides.</td><td>Prioritising a review queue, with analysts reviewing the bottom of the ranking.</td></tr><tr><th scope="row">Tier 3<span class="tier-label">Constrained autonomy</span></th><td>Constrained autonomy</td><td>Automated action within tight bounds, with real-time monitoring, automatic halt conditions and periodic independent testing.</td><td>Routine document classification with defined error tolerance and a reversal path.</td></tr></tbody>
+  </table></div>
+  </div>
+</section>
+  <section class="section section-mist" id="ai-trace" aria-labelledby="ai-trace-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Decision traceability</p>
+      <h2 id="ai-trace-title">What a single AI-assisted decision should be able to show</h2>
+      <p class="section-lead">If you cannot reconstruct one decision in minutes, the traceability is not operating. These are the fields we design into every consequential AI step.</p>
+    </header>
+    <div class="trace-wrap"><ol class="trace-list reveal"><li><strong>Input snapshot</strong><span>The data the model received, captured as it stood at the time.</span></li><li><strong>Model and version</strong><span>The provider, model identifier and configuration in use.</span></li><li><strong>Prompt or rule set</strong><span>The instructions and rules applied, under version control.</span></li><li><strong>Output</strong><span>What the model produced, unedited.</span></li><li><strong>Reviewer action</strong><span>Accepted, edited or rejected, with the person identified.</span></li><li><strong>Rationale</strong><span>Why the decision was taken, recorded where the outcome departed from the output.</span></li><li><strong>Timestamps and approvals</strong><span>When each step occurred and which approval gate applied.</span></li></ol><div class="trace-note reveal"><h3>Test it</h3><p>Pick five AI-assisted decisions at random and rebuild each from the record. Time the exercise. The result tells you more about your governance than any policy review.</p></div></div>
+  </div>
+</section>
+  <section class="section" id="ai-challenges" aria-labelledby="ai-challenges-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Common failure patterns</p>
+      <h2 id="ai-challenges-title">Where AI governance breaks down in practice</h2>
+      
+    </header>
+    <ul class="dash-list dash-list-lg reveal"><li>Enthusiasm for AI outpacing the controls needed to run it, creating shadow use across teams</li><li>Policies that state principles but leave operational questions unanswered, such as who reviews what and how often</li><li>Oversight applied uniformly, which either smothers low-risk use or leaves high-risk use under-controlled</li><li>Vendor models updated without notice, changing behaviour that was previously tested</li></ul>
+  </div>
+</section>
+  <section class="section section-mist" id="ai-faq" aria-labelledby="ai-faq-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2 id="ai-faq-title">AI governance: common questions</h2>
+      
+    </header>
+    <div class="faq"><details class="faq-item reveal"><summary>Do you help us write an AI policy?</summary><p>We can, but our focus is on the operating model that gives the policy effect: the use-case register, approval routes, tiering, monitoring and evidence. A policy that cannot be operated is a liability, so we design the mechanisms first and align the wording to them.</p></details><details class="faq-item reveal"><summary>How does this relate to model risk management?</summary><p>Where you have a model risk framework, we align tiering and validation expectations to it and extend it to cover generative and workflow-embedded AI, which often falls outside traditional model inventories.</p></details><details class="faq-item reveal"><summary>Is human-in-the-loop always the right answer?</summary><p>No. Human review adds cost and can become a rubber stamp if the reviewer lacks time or information. We set oversight by risk tier, and we measure whether reviewers are genuinely catching errors.</p></details><details class="faq-item reveal"><summary>Can you assess AI tools that our teams already use?</summary><p>Yes. Shadow use is common, and it is usually the first thing we surface in discovery. We help you bring existing tools into the register, classify them and decide which should be governed, restricted or retired.</p></details></div>
+  </div>
+</section>
+  <section class="cta-band" aria-labelledby="cta-title">
+  <div class="cta-bg" aria-hidden="true"><svg class="lattice" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <path d="M0 60 H600 M0 140 H600 M0 220 H600 M0 300 H600 M0 380 H600"/>
+    <path d="M60 0 V400 M180 0 V400 M300 0 V400 M420 0 V400 M540 0 V400"/>
+  </g>
+  <g fill="currentColor"><circle cx="180" cy="140" r="3"/><circle cx="300" cy="220" r="3"/><circle cx="420" cy="140" r="3"/><circle cx="540" cy="300" r="3"/><circle cx="60" cy="300" r="3"/></g>
+  <path d="M60 300 L180 140 L300 220 L420 140 L540 300" fill="none" stroke="#2EC4B6" stroke-width="1.6"/>
+</svg></div>
+  <div class="container cta-inner reveal">
+    <div>
+      <h2 id="cta-title">Govern the AI you already use before you add more.</h2>
+      <p>We start with a use-case register and a tiering exercise. Most organisations find more AI in use than they expected.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-light" href="/contact.html#discovery">Book Discovery Call</a>
+      <a class="btn btn-outline-light" href="/insights.html">Read AI governance insights</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-light" href="/" aria-label="Zi Cloud Ltd home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0B1F3A"/>
+  <path d="M9 10h14L9 22h14" fill="none" stroke="#2EC4B6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="23" cy="10" r="1.8" fill="#2EC4B6"/></svg><span class="brand-text">Zi Cloud</span></a>
+      <p class="footer-tag">We build controlled AI and workflow systems for regulated operations.</p>
+      <p class="footer-small">Zi Cloud Ltd is a UK-registered specialist consultancy for regulated operations.</p>
+    </div>
+    <nav aria-label="Services and solutions">
+      <h2 class="footer-h">Solutions</h2>
+      <ul>
+        <li><a href="/financial-crime-operations.html">Financial Crime Operations</a></li>
+        <li><a href="/compliance-operations.html">Compliance Operations</a></li>
+        <li><a href="/ai-governance.html">AI Governance</a></li>
+        <li><a href="/airtable-regulated-organisations.html">Airtable for Regulated Organisations</a></li>
+        <li><a href="/services.html">All Services</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2 class="footer-h">Company</h2>
+      <ul>
+        <li><a href="/industries.html">Industries</a></li>
+        <li><a href="/case-studies.html">Case Studies</a></li>
+        <li><a href="/insights.html">Insights</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer-h">Get in touch</h2>
+      <ul class="footer-contact">
+        <li><a href="mailto:hello@zicloud.uk">hello@zicloud.uk</a></li>
+        <li><a href="/contact.html#discovery">Book a discovery call</a></li>
+        <li><a href="/contact.html#partner">Partner with us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Zi Cloud Ltd. All rights reserved.</p>
+    <ul class="legal">
+      <li><a href="/privacy.html">Privacy notice</a></li>
+      <li><a href="/cookies.html">Cookie policy</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie consent" hidden>
+  <div class="cookie-inner">
+    <p>We use essential cookies to run this site. With your permission we also use analytics cookies to understand how the site is used. You can read more in our <a href="/cookies.html">cookie policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-sm" type="button" data-consent="essential">Essential only</button>
+      <button class="btn btn-primary btn-sm" type="button" data-consent="all">Accept all</button>
+    </div>
+  </div>
+</div>
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

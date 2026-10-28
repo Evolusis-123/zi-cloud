@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airtable Is Not a Database: Designing Controls Into Operational Platforms | Zi Cloud Ltd</title>
+<meta name="description" content="Describing Airtable as a database leads to weak designs in regulated work. Treating it as a workflow and control platform changes what you build and how you govern it.">
+<link rel="canonical" href="https://www.zicloud.uk/insights/airtable-is-not-a-database.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:site_name" content="Zi Cloud Ltd">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Airtable Is Not a Database: Designing Controls Into Operational Platforms | Zi Cloud Ltd">
+<meta property="og:description" content="Describing Airtable as a database leads to weak designs in regulated work. Treating it as a workflow and control platform changes what you build and how you govern it.">
+<meta property="og:url" content="https://www.zicloud.uk/insights/airtable-is-not-a-database.html">
+<meta property="og:image" content="https://www.zicloud.uk/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Airtable Is Not a Database: Designing Controls Into Operational Platforms | Zi Cloud Ltd">
+<meta name="twitter:description" content="Describing Airtable as a database leads to weak designs in regulated work. Treating it as a workflow and control platform changes what you build and how you govern it.">
+<meta name="twitter:image" content="https://www.zicloud.uk/assets/og-image.png">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Zi Cloud Ltd","url":"https://www.zicloud.uk"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Airtable Is Not a Database: Designing Controls Into Operational Platforms","description":"Describing Airtable as a database leads to weak designs in regulated work. Treating it as a workflow and control platform changes what you build and how you govern it.","datePublished":"2026-04-30","dateModified":"2026-04-30","author":{"@type":"Person","name":"Asif Saraiya"},"publisher":{"@type":"Organization","name":"Zi Cloud Ltd","logo":{"@type":"ImageObject","url":"https://www.zicloud.uk/assets/logo.svg"}},"mainEntityOfPage":"https://www.zicloud.uk/insights/airtable-is-not-a-database.html","articleSection":"Airtable","inLanguage":"en-GB"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.zicloud.uk/"},{"@type":"ListItem","position":2,"name":"Insights","item":"https://www.zicloud.uk/insights.html"},{"@type":"ListItem","position":3,"name":"Airtable Is Not a Database: Designing Controls Into Operational Platforms","item":"https://www.zicloud.uk/insights/airtable-is-not-a-database.html"}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Zi Cloud Ltd home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0B1F3A"/>
+  <path d="M9 10h14L9 22h14" fill="none" stroke="#2EC4B6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="23" cy="10" r="1.8" fill="#2EC4B6"/></svg><span class="brand-text">Zi Cloud</span></a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li><li class="nav-item has-children">
+        <button class="nav-link nav-trigger" type="button" aria-expanded="false" aria-controls="menu-1">Solutions <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="dropdown" id="menu-1">
+          <ul><li><a href="/financial-crime-operations.html"><span class="dd-title">Financial Crime Operations</span><span class="dd-desc">AML, KYC, investigations and SAR workflows</span></a></li><li><a href="/compliance-operations.html"><span class="dd-title">Compliance Operations</span><span class="dd-desc">Controls, evidence and audit readiness</span></a></li><li><a href="/ai-governance.html"><span class="dd-title">AI Governance</span><span class="dd-desc">Human oversight, controls and decision traceability</span></a></li><li><a href="/airtable-regulated-organisations.html"><span class="dd-title">Airtable for Regulated Organisations</span><span class="dd-desc">Operational control platform design</span></a></li></ul>
+        </div>
+      </li><li class="nav-item"><a class="nav-link" href="/industries.html">Industries</a></li><li class="nav-item"><a class="nav-link" href="/case-studies.html">Case Studies</a></li><li class="nav-item"><a class="nav-link is-active" href="/insights.html" aria-current="page">Insights</a></li><li class="nav-item"><a class="nav-link" href="/about.html">About</a></li></ul>
+      <div class="nav-cta-mobile"><a class="btn btn-primary" href="/contact.html#discovery">Book Discovery Call</a></div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm header-cta" href="/contact.html#discovery">Book Discovery Call</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><span class="sr-only">Menu</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs container" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/insights.html">Insights</a></li><li aria-current="page">Airtable Is Not a Database: Designing Controls Into Operational Platforms</li></ol></nav>
+  <article class="article">
+    <header class="article-head container reveal">
+      <p class="insight-meta"><span class="label-pill">Airtable</span><time datetime="2026-04-30">30 April 2026</time><span>5 min read</span></p>
+      <h1>Airtable Is Not a Database: Designing Controls Into Operational Platforms</h1>
+      <p class="lead">Describing Airtable as a database leads to weak designs in regulated work. Treating it as a workflow and control platform changes what you build and how you govern it.</p>
+    </header>
+    <div class="container article-body reveal">
+      <p>Airtable stores structured data, but its value in regulated operations comes from what sits around the data: stages, permissions, validation, automations and views. Treating it as a database leads teams to model data well but leave the control logic undefined.</p><p>Design controls explicitly. Required fields, validation rules, approval fields and restricted views should map to the control framework. Automations should be versioned and tested like any other operational change.</p><p>Be honest about the boundaries. Airtable should not be the system of record for transactions or regulatory data that other systems rely on. Where it is used for the workflow and the operational record around those processes, governance is what makes it defensible.</p>
+      <aside class="article-cta" aria-label="Next step">
+        <p><strong>Applying this to your operation?</strong> Start with a discovery conversation focused on one process.</p>
+        <a class="btn btn-primary btn-sm" href="/contact.html#discovery">Book Discovery Call</a>
+      </aside>
+    </div>
+  </article>
+  <section class="section section-mist" aria-labelledby="related-title">
+    <div class="container">
+      <h2 id="related-title" class="h3">Related insights</h2>
+      <div class="grid grid-3"><a class="card card-link-wrap reveal" href="/insights/human-in-the-loop-ai.html">
+    <h3>Human-in-the-Loop AI: Where Oversight Adds Value and Where It Becomes Theatre</h3>
+    <p>Human review is the most common control proposed for AI and often the least well designed. This piece sets out when a reviewer adds real assurance and when they simply add delay.</p>
+    <span class="card-link">6 min read <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a><a class="card card-link-wrap reveal" href="/insights/design-audit-ready-automation.html">
+    <h3>How to Design Audit-Ready Automation</h3>
+    <p>An automated process is only as defensible as its record. A practical method for building the logs, controls and change history that an auditor will ask for.</p>
+    <span class="card-link">5 min read <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a><a class="card card-link-wrap reveal" href="/insights/future-of-ai-governance.html">
+    <h3>The Future of AI Governance</h3>
+    <p>Governance is moving from policy documents to operating mechanisms. What that shift means for risk, compliance and operations leaders over the next two years.</p>
+    <span class="card-link">6 min read <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-light" href="/" aria-label="Zi Cloud Ltd home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0B1F3A"/>
+  <path d="M9 10h14L9 22h14" fill="none" stroke="#2EC4B6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="23" cy="10" r="1.8" fill="#2EC4B6"/></svg><span class="brand-text">Zi Cloud</span></a>
+      <p class="footer-tag">We build controlled AI and workflow systems for regulated operations.</p>
+      <p class="footer-small">Zi Cloud Ltd is a UK-registered specialist consultancy for regulated operations.</p>
+    </div>
+    <nav aria-label="Services and solutions">
+      <h2 class="footer-h">Solutions</h2>
+      <ul>
+        <li><a href="/financial-crime-operations.html">Financial Crime Operations</a></li>
+        <li><a href="/compliance-operations.html">Compliance Operations</a></li>
+        <li><a href="/ai-governance.html">AI Governance</a></li>
+        <li><a href="/airtable-regulated-organisations.html">Airtable for Regulated Organisations</a></li>
+        <li><a href="/services.html">All Services</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2 class="footer-h">Company</h2>
+      <ul>
+        <li><a href="/industries.html">Industries</a></li>
+        <li><a href="/case-studies.html">Case Studies</a></li>
+        <li><a href="/insights.html">Insights</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer-h">Get in touch</h2>
+      <ul class="footer-contact">
+        <li><a href="mailto:hello@zicloud.uk">hello@zicloud.uk</a></li>
+        <li><a href="/contact.html#discovery">Book a discovery call</a></li>
+        <li><a href="/contact.html#partner">Partner with us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Zi Cloud Ltd. All rights reserved.</p>
+    <ul class="legal">
+      <li><a href="/privacy.html">Privacy notice</a></li>
+      <li><a href="/cookies.html">Cookie policy</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie consent" hidden>
+  <div class="cookie-inner">
+    <p>We use essential cookies to run this site. With your permission we also use analytics cookies to understand how the site is used. You can read more in our <a href="/cookies.html">cookie policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-sm" type="button" data-consent="essential">Essential only</button>
+      <button class="btn btn-primary btn-sm" type="button" data-consent="all">Accept all</button>
+    </div>
+  </div>
+</div>
+<script src="/assets/main.js" defer></script>
+</body>
+</html>

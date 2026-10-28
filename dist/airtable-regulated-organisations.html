@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airtable for Regulated Organisations: Workflow and Control Platform Design | Zi Cloud Ltd</title>
+<meta name="description" content="Airtable consulting for regulated organisations: workflow, operational control, case management and governance design, with AI integrations and audit-ready architecture.">
+<link rel="canonical" href="https://www.zicloud.uk/airtable-regulated-organisations.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0B1F3A">
+<meta property="og:site_name" content="Zi Cloud Ltd">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Airtable for Regulated Organisations: Workflow and Control Platform Design | Zi Cloud Ltd">
+<meta property="og:description" content="Airtable consulting for regulated organisations: workflow, operational control, case management and governance design, with AI integrations and audit-ready architecture.">
+<meta property="og:url" content="https://www.zicloud.uk/airtable-regulated-organisations.html">
+<meta property="og:image" content="https://www.zicloud.uk/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Airtable for Regulated Organisations: Workflow and Control Platform Design | Zi Cloud Ltd">
+<meta name="twitter:description" content="Airtable consulting for regulated organisations: workflow, operational control, case management and governance design, with AI integrations and audit-ready architecture.">
+<meta name="twitter:image" content="https://www.zicloud.uk/assets/og-image.png">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Zi Cloud Ltd","url":"https://www.zicloud.uk"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Airtable acceptable for regulated data?","acceptedAnswer":{"@type":"Answer","text":"That depends on your data classification, your vendor due diligence and how the platform is configured. We include vendor assessment, permission design, data retention and audit export in every regulated deployment, and we document the residual risks for your risk committee."}},{"@type":"Question","name":"Why not build this in a case management suite?","acceptedAnswer":{"@type":"Answer","text":"Sometimes you should. Where a dedicated case platform fits your process, we will recommend it. Airtable is a good choice when processes change frequently, when business teams need to maintain workflows, and when the control layer needs to be designed around your specific requirements."}},{"@type":"Question","name":"Do you build Airtable bases for clients?","acceptedAnswer":{"@type":"Answer","text":"We design and build the workflow, control and integration layers, and we hand over the governance model so your team can operate it. We do not replace your internal capability with a permanent dependency on us."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Airtable for Regulated Organisations","url":"https://www.zicloud.uk/airtable-regulated-organisations.html"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Zi Cloud Ltd home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0B1F3A"/>
+  <path d="M9 10h14L9 22h14" fill="none" stroke="#2EC4B6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="23" cy="10" r="1.8" fill="#2EC4B6"/></svg><span class="brand-text">Zi Cloud</span></a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <ul class="nav-list"><li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li><li class="nav-item has-children">
+        <button class="nav-link nav-trigger is-active" type="button" aria-expanded="false" aria-controls="menu-1">Solutions <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="dropdown" id="menu-1">
+          <ul><li><a href="/financial-crime-operations.html"><span class="dd-title">Financial Crime Operations</span><span class="dd-desc">AML, KYC, investigations and SAR workflows</span></a></li><li><a href="/compliance-operations.html"><span class="dd-title">Compliance Operations</span><span class="dd-desc">Controls, evidence and audit readiness</span></a></li><li><a href="/ai-governance.html"><span class="dd-title">AI Governance</span><span class="dd-desc">Human oversight, controls and decision traceability</span></a></li><li><a href="/airtable-regulated-organisations.html" aria-current="page"><span class="dd-title">Airtable for Regulated Organisations</span><span class="dd-desc">Operational control platform design</span></a></li></ul>
+        </div>
+      </li><li class="nav-item"><a class="nav-link" href="/industries.html">Industries</a></li><li class="nav-item"><a class="nav-link" href="/case-studies.html">Case Studies</a></li><li class="nav-item"><a class="nav-link" href="/insights.html">Insights</a></li><li class="nav-item"><a class="nav-link" href="/about.html">About</a></li></ul>
+      <div class="nav-cta-mobile"><a class="btn btn-primary" href="/contact.html#discovery">Book Discovery Call</a></div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm header-cta" href="/contact.html#discovery">Book Discovery Call</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><span class="sr-only">Menu</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs container" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Airtable for Regulated Organisations</li></ol></nav><section class="hero hero-dark">
+  <div class="hero-bg" aria-hidden="true"><svg class="lattice" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <path d="M0 60 H600 M0 140 H600 M0 220 H600 M0 300 H600 M0 380 H600"/>
+    <path d="M60 0 V400 M180 0 V400 M300 0 V400 M420 0 V400 M540 0 V400"/>
+  </g>
+  <g fill="currentColor"><circle cx="180" cy="140" r="3"/><circle cx="300" cy="220" r="3"/><circle cx="420" cy="140" r="3"/><circle cx="540" cy="300" r="3"/><circle cx="60" cy="300" r="3"/></g>
+  <path d="M60 300 L180 140 L300 220 L420 140 L540 300" fill="none" stroke="#2EC4B6" stroke-width="1.6"/>
+</svg></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Platform</p>
+      <h1>Airtable for Regulated Organisations</h1>
+      <p class="lead">Airtable is often described as a database, which undersells it and misleads buyers in regulated environments. In our work it functions as a workflow platform, an operational control layer, a case management environment and a governance record, provided it is designed and governed with the discipline a regulated process requires.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="/contact.html#discovery">Book Discovery Call</a><a class="btn btn-outline" href="#at-architecture">See the architecture</a></div>
+    </div>
+    <div class="hero-visual reveal"><ol class="step-flow" style="--n:4" aria-label="Airtable roles in regulated operations"><li class="step-flow-item"><span class="step-num">01</span><span class="step-label">Workflow</span></li><li class="step-flow-item"><span class="step-num">02</span><span class="step-label">Controls</span></li><li class="step-flow-item"><span class="step-num">03</span><span class="step-label">Case records</span></li><li class="step-flow-item"><span class="step-num">04</span><span class="step-label">Governance</span></li></ol></div>
+  </div>
+</section>
+  <section class="section" id="at-roles" aria-labelledby="at-roles-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Positioning</p>
+      <h2 id="at-roles-title">Not a database. An operational control platform.</h2>
+      <p class="section-lead">Airtable is a strong place to run the workflow and hold the operational record around regulated processes. It should not be asked to be the bank’s ledger, and we will say so during discovery if your design asks it to be.</p>
+    </header>
+    <div class="grid grid-4"><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="16" y="15" width="6" height="6" rx="1"/><path d="M8 6h4a2 2 0 0 1 2 2v8a2 2 0 0 0 2 2h0"/></svg></span>
+    <h3>Workflow platform</h3>
+    <p>Stages, ownership, routing and service levels for operational processes, with automations that move work between teams.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+    <h3>Operational control platform</h3>
+    <p>Mandatory fields, validation, role-based permissions and approval gates that enforce how work is done.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></span>
+    <h3>Case management platform</h3>
+    <p>Linked records for alerts, cases, clients, evidence and decisions, with views tailored to each role.</p>
+    </div><div class="card reveal"><span class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+    <h3>Governance platform</h3>
+    <p>Decision logs, control registers and action trackers that committees and auditors can interrogate.</p>
+    </div></div>
+  </div>
+</section>
+  <section class="section section-mist" id="at-usecases" aria-labelledby="at-usecases-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Use cases</p>
+      <h2 id="at-usecases-title">Where regulated teams run work on Airtable</h2>
+      
+    </header>
+    <div class="grid grid-3"><div class="card reveal">
+    <h3>Alert and case queues</h3>
+    <p>Structured case records with SLAs, ownership and escalation, replacing shared spreadsheets and inbox tracking.</p>
+    </div><div class="card reveal">
+    <h3>KYC refresh management</h3>
+    <p>Scheduled review cycles per customer segment, document requests, and a completion record for each refresh.</p>
+    </div><div class="card reveal">
+    <h3>Control testing</h3>
+    <p>Test plans, sampling records, results and remediation tracked against each control in the register.</p>
+    </div><div class="card reveal">
+    <h3>Vendor due diligence</h3>
+    <p>Questionnaire workflows, evidence collection and periodic review schedules for third parties.</p>
+    </div><div class="card reveal">
+    <h3>Policy attestation</h3>
+    <p>Policy versions linked to attestation campaigns, with reminders and escalation for non-responders.</p>
+    </div><div class="card reveal">
+    <h3>Regulatory change tracking</h3>
+    <p>Horizon scanning inputs, impact assessment workflows and implementation actions linked to affected controls.</p>
+    </div></div>
+  </div>
+</section>
+  <section class="section" id="at-architecture" aria-labelledby="at-architecture-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Architecture</p>
+      <h2 id="at-architecture-title">A layered design with clear system boundaries</h2>
+      <p class="section-lead">Airtable sits in the workflow and control layer. Systems of record stay where they are, and AI services sit behind an approval gate.</p>
+    </header>
+    <div class="reveal"><div class="layer-stack" role="list"><div class="layer" role="listitem"><h4>Experience</h4><ul><li>Role-specific views</li><li>Forms for controlled data capture</li><li>Dashboards for committees</li></ul></div><div class="layer" role="listitem"><h4>Workflow and control</h4><ul><li>Airtable bases with defined schemas</li><li>Validation, permissions and approval gates</li><li>Versioned automation logic</li></ul></div><div class="layer" role="listitem"><h4>Orchestration</h4><ul><li>Automation platform such as Make, n8n, Zapier or Workato</li><li>Retry, failure and exception handling</li><li>Monitoring of runs and errors</li></ul></div><div class="layer" role="listitem"><h4>AI services</h4><ul><li>Model APIs behind an approval gate</li><li>Prompt and rule versioning</li><li>Output logging with reviewer identity</li></ul></div><div class="layer" role="listitem"><h4>Systems of record</h4><ul><li>Core banking, KYC and screening engines</li><li>Data warehouse for reporting</li><li>Document and evidence stores</li></ul></div><div class="layer" role="listitem"><h4>Audit and assurance</h4><ul><li>Exported activity logs</li><li>Control evidence index</li><li>Independent testing access</li></ul></div></div></div>
+  </div>
+</section>
+  <section class="section section-mist" id="at-ai" aria-labelledby="at-ai-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">AI integrations</p>
+      <h2 id="at-ai-title">AI that proposes inside a controlled base</h2>
+      
+    </header>
+    <ul class="dash-list dash-list-lg reveal"><li>Case narrative drafting from structured fields, with the analyst editing and approving before the record is saved</li><li>Document extraction into structured fields, with confidence scores and a verification queue for low-confidence items</li><li>Summarisation of long evidence threads for reviewers, linked back to the source messages</li><li>Classification and routing of incoming requests, with rules that override the model for defined categories</li></ul>
+  </div>
+</section>
+  <section class="section" id="at-workflows" aria-labelledby="at-workflows-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Workflow examples</p>
+      <h2 id="at-workflows-title">How controlled workflows look on the platform</h2>
+      
+    </header>
+    <div class="grid grid-3"><div class="card reveal"><h3>Screening potential match</h3><ol class="mini-steps"><li>Screening tool posts a potential match via API</li><li>Record created with risk category and due date</li><li>Analyst disposition with mandatory rationale</li><li>Second-line sample selected by rule</li><li>Closed record written to audit log</li></ol></div><div class="card reveal"><h3>Periodic KYC review</h3><ol class="mini-steps"><li>Refresh schedule generates tasks by risk rating</li><li>Customer document request issued through a controlled form</li><li>Documents received and verified against checklist</li><li>Decision approved at the level set by risk rating</li><li>Next review date set automatically</li></ol></div><div class="card reveal"><h3>Regulatory return sign-off</h3><ol class="mini-steps"><li>Source data loaded and reconciled against control totals</li><li>Exceptions raised to named data owners</li><li>Preparer submits, reviewer approves, senior sign-off recorded</li><li>Submission reference and evidence stored against the return</li></ol></div></div>
+  </div>
+</section>
+  <section class="section section-mist" id="at-governance" aria-labelledby="at-governance-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Governance examples</p>
+      <h2 id="at-governance-title">The controls that make the platform defensible</h2>
+      
+    </header>
+    <div class="grid grid-2"><div class="card reveal"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><p class="card-plain">Role-based permissions with field-level restrictions on sensitive data, reviewed quarterly</p></div><div class="card reveal"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><p class="card-plain">Change control for automations and field definitions, with a release log and test evidence</p></div><div class="card reveal"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><p class="card-plain">Immutable activity history exported to a separate audit store on a schedule</p></div><div class="card reveal"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><p class="card-plain">Data retention rules applied by table, with deletion logged and approved</p></div></div>
+  </div>
+</section>
+  <section class="section" id="at-limits" aria-labelledby="at-limits-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Honest boundaries</p>
+      <h2 id="at-limits-title">Where Airtable should not be used</h2>
+      <p class="section-lead">We will tell you if your design asks the platform to do something it should not. That conversation protects you during supervisory review.</p>
+    </header>
+    <ul class="dash-list dash-list-lg reveal"><li>As the system of record for transactions, balances or regulatory data that other systems must treat as authoritative</li><li>For high-volume, low-latency processing that belongs in an engine designed for throughput</li><li>Where access requirements cannot be met through permissions and the data must be partitioned at a deeper level</li><li>Where no owner will govern the base, its automations and its change history</li></ul>
+  </div>
+</section>
+  <section class="section section-mist" id="at-faq" aria-labelledby="at-faq-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2 id="at-faq-title">Airtable in regulated environments: common questions</h2>
+      
+    </header>
+    <div class="faq"><details class="faq-item reveal"><summary>Is Airtable acceptable for regulated data?</summary><p>That depends on your data classification, your vendor due diligence and how the platform is configured. We include vendor assessment, permission design, data retention and audit export in every regulated deployment, and we document the residual risks for your risk committee.</p></details><details class="faq-item reveal"><summary>Why not build this in a case management suite?</summary><p>Sometimes you should. Where a dedicated case platform fits your process, we will recommend it. Airtable is a good choice when processes change frequently, when business teams need to maintain workflows, and when the control layer needs to be designed around your specific requirements.</p></details><details class="faq-item reveal"><summary>Do you build Airtable bases for clients?</summary><p>We design and build the workflow, control and integration layers, and we hand over the governance model so your team can operate it. We do not replace your internal capability with a permanent dependency on us.</p></details></div>
+  </div>
+</section>
+  <section class="cta-band" aria-labelledby="cta-title">
+  <div class="cta-bg" aria-hidden="true"><svg class="lattice" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="currentColor" stroke-width="1">
+    <path d="M0 60 H600 M0 140 H600 M0 220 H600 M0 300 H600 M0 380 H600"/>
+    <path d="M60 0 V400 M180 0 V400 M300 0 V400 M420 0 V400 M540 0 V400"/>
+  </g>
+  <g fill="currentColor"><circle cx="180" cy="140" r="3"/><circle cx="300" cy="220" r="3"/><circle cx="420" cy="140" r="3"/><circle cx="540" cy="300" r="3"/><circle cx="60" cy="300" r="3"/></g>
+  <path d="M60 300 L180 140 L300 220 L420 140 L540 300" fill="none" stroke="#2EC4B6" stroke-width="1.6"/>
+</svg></div>
+  <div class="container cta-inner reveal">
+    <div>
+      <h2 id="cta-title">Design the control layer before you configure the base.</h2>
+      <p>We run a platform-fit review that checks data classification, permissions, audit export and ownership before anything is built.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-light" href="/contact.html#vendor">Talk to us about Airtable</a>
+      <a class="btn btn-outline-light" href="/contact.html#discovery">Book Discovery Call</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand-light" href="/" aria-label="Zi Cloud Ltd home"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0B1F3A"/>
+  <path d="M9 10h14L9 22h14" fill="none" stroke="#2EC4B6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="23" cy="10" r="1.8" fill="#2EC4B6"/></svg><span class="brand-text">Zi Cloud</span></a>
+      <p class="footer-tag">We build controlled AI and workflow systems for regulated operations.</p>
+      <p class="footer-small">Zi Cloud Ltd is a UK-registered specialist consultancy for regulated operations.</p>
+    </div>
+    <nav aria-label="Services and solutions">
+      <h2 class="footer-h">Solutions</h2>
+      <ul>
+        <li><a href="/financial-crime-operations.html">Financial Crime Operations</a></li>
+        <li><a href="/compliance-operations.html">Compliance Operations</a></li>
+        <li><a href="/ai-governance.html">AI Governance</a></li>
+        <li><a href="/airtable-regulated-organisations.html">Airtable for Regulated Organisations</a></li>
+        <li><a href="/services.html">All Services</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2 class="footer-h">Company</h2>
+      <ul>
+        <li><a href="/industries.html">Industries</a></li>
+        <li><a href="/case-studies.html">Case Studies</a></li>
+        <li><a href="/insights.html">Insights</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer-h">Get in touch</h2>
+      <ul class="footer-contact">
+        <li><a href="mailto:hello@zicloud.uk">hello@zicloud.uk</a></li>
+        <li><a href="/contact.html#discovery">Book a discovery call</a></li>
+        <li><a href="/contact.html#partner">Partner with us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Zi Cloud Ltd. All rights reserved.</p>
+    <ul class="legal">
+      <li><a href="/privacy.html">Privacy notice</a></li>
+      <li><a href="/cookies.html">Cookie policy</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="region" aria-label="Cookie consent" hidden>
+  <div class="cookie-inner">
+    <p>We use essential cookies to run this site. With your permission we also use analytics cookies to understand how the site is used. You can read more in our <a href="/cookies.html">cookie policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-sm" type="button" data-consent="essential">Essential only</button>
+      <button class="btn btn-primary btn-sm" type="button" data-consent="all">Accept all</button>
+    </div>
+  </div>
+</div>
+<script src="/assets/main.js" defer></script>
+</body>
+</html>
